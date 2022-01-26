@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;;
+}
+
+
+body {
+    background-image: 
+    url(./images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #e0e8ff;
+
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.box {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ****************** */
+.box {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 16px rgba(143, 177, 202, 0.712);
+}
+
+.box-pic {
+    width: 100%;
+}
+
+.box-pic img {
+    border-radius: 1rem 1rem 0 0 ;
+    width: 100%;
+}
+
+/* box main */
+.box-main {
+    padding: 0 1.8rem 1.8rem 1.8rem;
+    text-align: center;
+}
+
+
+.box-content h1{
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding-top: 1.6rem;
+}
+
+.box-content p {
+    padding: 1rem 1rem;
+}
+
+p{
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+
+.update--title {
+    font-size: 0.8rem;
+}
+
+.box-update {
+    padding: 1rem 1rem;
+}
+
+.box-update__left img {
+    padding-right: 0.6rem;
+    width: 2.6rem;
+    height: auto;
+}
+
+.box-main button {
+    display: block;
+    width: 100%;
+    font-size: 0.7rem;
+
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.btn1 {
+    padding: 0.6rem 0;
+    background-color: var(--Bright-blue);
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 2px 2px 15px var(--Desaturated-blue);
+    border: none;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+.btn2 {
+    font-size: 0.7rem;
+    border: none;
+    background-color: transparent;
+    color: var(--Desaturated-blue);
+    font-weight: 900;
+    padding: 0.6rem 0;
+    text-decoration: none;
+}
+
+
+
+a.change {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 300px) {
+    .box {
+        position: absolute;
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    .box-update {
+        flex-direction: column;
+    }
+
+    .box-update__left {
+        flex-direction: column;
+    }
+    
+}
