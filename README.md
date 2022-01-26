@@ -1,4 +1,5 @@
 # Frontend Mentor - Order summary card
+# https://alex-mtid.github.io/frontent-mentor__ex3/
 
 ![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
 
